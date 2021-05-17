@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: Tahoma;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000000;    
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */     
+
+    cursor: pointer;
+}
+
+body{
+    padding: 10px;
+}
+
+
+.wrapper-off{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    position: fixed;
+    background-color: #0000003a;
+}
+
+.wrapper-on{
+    display: block;
+}
+
+
+.center{
+    width: calc(100vw - 30px);
+    height: calc(100vh - 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropbtn{
+    color: #ffffff;
+    background-color: #187bcd;
+    padding: 10px 20px 10px 20px;
+
+    border: none;
+    border-radius: 5%;
+}
+
+.dropbtn-off{
+    background-color: #0a1925dc;
+    cursor: default;
+}
+
+.droplist{
+    padding: 10px;
+    position: fixed;
+    top: 0%;
+    left: calc(35%);
+    border: 2px solid #000000;
+    border-radius: 5px;
+    width: 30%;
+    z-index: 20;
+
+    background-color: #ffffff;
+    transition: .1s;
+}
+
+.show{
+    top: -200%;
+}
+
+
+
+.Headspace{
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.btn-headspace{
+    position: absolute;
+
+    top: -30%;
+    left: 98%;
+    font-size: 20px;
+    background-color: #ffffff;
+    border: none;
+}
+
+.text-space{
+    margin-bottom: 5px;
+}
+
+
+
+.close-btn{
+    padding: 5px 10px 5px 10px;
+    background-color: #b31919;
+    color: #ffffff;
+    border: 1px solid #b31919;
+    border-radius: 5px;
+}
+
+.close-btn:hover{
+    background-color: #ffffff;
+    color: #b31919;
+}
+
+.green-btn{
+    padding: 5px 10px 5px 10px;
+    color: #ffffff;
+    border: 1px solid #005500;
+    border-radius: 5px;
+    background-color: #005500;
+    margin-right: 10px;
+}
+
+.green-btn:hover{
+    color: #005500;
+    background-color: #ffffff;
+}
+
+.buttonspace{
+    text-align: end;
+}
+
+
+
+@media screen and (max-width: 900px){
+    .droplist{
+        width: 90%;
+        left: calc(5%);
+    }
+}
+
+
+/*
+@media screen and (max-height: 900px){
+    .droplist{
+        top: 0%;
+    }
+}
+*/
